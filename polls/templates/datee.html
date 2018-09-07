@@ -1,0 +1,17 @@
+{%extends 'base.html' %}
+{% block title %}My Hello Page{% endblock %}
+{%block content %}
+      <h3>date programe</h3>
+      Hello World!!!<p>Today is {{datee}}</p>
+      {%if datee.day == 1 %}
+      helo bro
+      {%else%}
+      <p>
+         {% for day in days %}
+         {{day}}
+      </p>
+      {%endfor%}
+      {%endif%}
+
+
+{% endblock%}
